@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Contact US</title>
+	<link rel="shortcut icon" type="image" href="logo/WATERMARK.png">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="css/pogo-slider.min.css" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<style>
+   #active1 a{
+				color: white !important;
+			}
+		.pop .overlay1{
+			position: fixed;
+		
+			top: 0px;
+			left:0px;
+			width:100vw;
+			height: 100vh;
+			background: rgba(0,0,0,0.7) ; 
+			z-index: 1; 
+		display: none; }
+		.pop .content1{
+			position: fixed;
+			top:15%;
+			left:50%;
+			transform: translate(-50%,-50%) scale(0);
+		   display: inline-block;
+			z-index: 2;
+			text-align: center;
+			background: #fff;
+			box-sizing: border-box;
+	
+		}
+		.pop .cbutton{
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			width:30px;
+			height:30px;
+			background: #222;
+			color:#fff;
+			font-size: 25px;
+			font-weight: 600;
+			line-height: 30px;
+			text-align: center;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+		.pop.active .overlay1{
+			display: block;
+	
+		}
+		.pop.active .content1{
+			position: fixed;
+			transition: all 300ms ease-in-out;
+			transform: translate(-50%,-20%) scale(1);
+			
+		}
+		.imagec{
+			border-radius: 10px;
+		}
+		
+		
+
+		.popup{
+			width:450px;
+			height:500px;
+			background: #4c1864;
+		   
+			
+		}
+		.popup1{
+			
+			background: #4c1864;
+			padding: 30px;
+	
+		}
+		.popup1 h2{
+			font-size: 32px;
+		line-height: 45px;
+		margin-bottom: 25px;
+		font-weight: 700;
+		color: #fff;
+		text-align: left;
+		}
+		.popup1 p{
+			color:#fff;
+			border-bottom: 2px;
+			font-family: Arial, Helvetica, sans-serif;
+			position: relative;
+			padding-bottom:20px;
+			text-align: left;
+		}
+		.popup1 p::after{
+			position: absolute;
+			top:33px;
+			width:100%;
+			
+		content: "";
+	   
+		height: 2px;
+		background:#585e63;
+		left: 0;
+		bottom: 0;
+		}
+		.popup1 ul{list-style-type: none;
+		padding-left: 0px;}
+		.info12{
+			color:#fff;
+			font-family: Arial, Helvetica, sans-serif;
+			padding-bottom: 10px;
+		   text-align: justify;
+	
+		}
+		.row{
+			position: relative;
+		}
+	   
+		.infoicon{
+			
+			padding-right:10px;
+			float:left;
+			top:20px !important;
+			font-size: 25px;
+		}
+		.infodi{
+			padding-left: 40px;
+			padding-right: 5px;
+		}
+	
+		.con12{
+			padding-bottom: 30px;
+	
+	
+			position: relative;
+		}
+	   
+		.iconb{
+			border-radius: 50%;
+			padding:13px;
+			border:1px solid white;
+		   
+			cursor: pointer;
+		}
+		.iconb:hover{
+			background:#F49F1c !important ;
+			color:black;
+			cursor: pointer;
+		}
+		.line{
+			position: relative;
+		}
+		.line::after{
+			position: absolute;
+			top:37px;
+			width:100%;
+			
+		content: "";
+	   
+		height: 2px;
+		background:#585e63;
+		left: 0;
+		bottom: 0;
+		}
+		.followline{
+		   
+			position: relative;
+			margin-top:-15px;
+			padding-bottom: 20px;
+		}
+		.followline::after{
+			position: absolute;
+			top:27px;
+			width:100%;
+			
+		content: "";
+	   
+		height: 2px;
+		background:#585e63;
+		left: 0;
+		bottom: 0;
+	
+		}
+		@media(max-width:500px){
+			.popup{
+				width:300px;
+				height:400px;
+			  
+			}
+			.popup1 h2{
+				font-size: 25px;
+				margin-bottom: 0;
+			}
+			.popup1 p{
+				font-size: 13px;
+	
+			}
+			.con12{
+				padding-bottom: 15px;
+			}
+			.infoicon{
+				font-size: 20px;
+			}
+			.infodi{
+				padding-left:28px;
+			}
+			.followline{
+				font-size: 16px;
+				
+			}
+			.iconb{
+				padding:10px;
+				font-size: 13px;
+			}
+			.mapf{
+				font-size: 16px;
+	
+			}
+			.info12{
+				letter-spacing: 0.5px;
+				margin-top: -15px;
+			}
+			.followline::after{
+			position: absolute;
+			top:20px;
+			width:100%;
+			
+		content: "";
+	   
+		height: 2px;
+		background:#585e63;
+		left: 0;
+		bottom: 0;
+	
+		}
+		.line::after{
+			position: absolute;
+			top:30px;
+			width:100%;
+			
+		content: "";
+	   
+		height: 2px;
+		background:#585e63;
+		left: 0;
+		bottom: 0;
+		}
+		   
+		}
+		@media(max-width:700px){
+			.pop.active .content1{
+			transition: all 300ms ease-in-out;
+			transform: translate(-50%, -15%) scale(1);
+		}
+		.pop.active .content2{
+			transition: all 300ms ease-in-out;
+			transform: translate(-50%,-15%) scale(1);
+		}
+		.pop.active .content3{
+			transition: all 300ms ease-in-out;
+			transform: translate(-50%,-15%) scale(1);
+		}
+		}
+		.mapf{
+				padding-bottom: 15px;
+	
+			}
+			
+	
+		
+	
+	</style>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body id="inner_page" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="images/loader.gif" alt="#" />
+        </div>
+    </div>
+    <!-- end loader -->
+    <!-- END LOADER -->
+
+   <!-- Start header -->
+   <header class="top-header">
+	<nav class="navbar header-nav navbar-expand-lg" >
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html"><img src="Logo/pha-02.png" alt="image"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end wrapper" id="navbar-wd">
+				<ul class="navbar-nav" >
+					<li><a class="nav-link active" href="index.html">Home</a></li>
+					<li class="li1">
+						<a class="nav-link"  href="courses.html">Courses</a>
+						<ul class="ul1">
+						  <li><a href="jee-main.html">
+							JEE (Main + Advanced)</a>
+						  </li>
+						  <li >
+							<a href="Neet.html">
+							  NEET</a>
+						  </li>
+						  <li >
+							<a href="Boards.htm">
+							  MHT-CET + Boards</a>
+						  </li>
+						  <li >
+							<a href="UPSC.html">
+							  Civil Services</a>
+						  </li>
+						  <li >
+							<a href="Banking.html">
+							  Banking</a>
+						  </li>
+						</ul>
+					  
+					  </li>
+					  <li class="hidden" ><a class="nav-link" href="jee-main.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JEE (Main + Advanced) </a></li>
+					  <li class="hidden"><a class="nav-link" href="Neet.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NEET</a></li>
+					  <li class="hidden" ><a class="nav-link" href="Boards.htm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MHT-CET + Boards</a></li>
+					  <li class="hidden" ><a class="nav-link" href="UPSC.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Civil Services</a></li>
+					  <li class="hidden" ><a class="nav-link" href="Banking.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banking</a></li>
+					<li><a class="nav-link" href="gallery.html">Results</a></li>
+					<li><a class="nav-link" href="about.html">About</a></li>
+					
+					<li id="active1"><a class="nav-link" href="contact.html">Contact us</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+</header>
+<!-- End header -->
+
+	<!-- section -->
+	
+	<section class="inner_banner">
+	  <div class="container">
+	      <div class="row">
+		      <div class="col-12">
+			     <div class="full">
+				     <h3>Contact us</h3>
+				 </div>
+			  </div>
+		  </div>
+	  </div>
+	</section>
+	
+	<!-- end section -->
+   
+	<!-- section -->
+    <div class="section layout_padding contact_section" style="background:#f6f6f6;">
+        <div class="container">
+               <div class="row">
+                 <div class="col-lg-8 col-md-8 col-sm-12">
+				    <div class="full float-right_img">
+                        <img src="images/img10.png" alt="#">
+                    </div>
+                 </div>
+				 <div class="col-lg-4 col-md-4 col-sm-12">
+				    <div class="contact_form">
+					    <form action="http://phasor.co.in/Database/Insertt.php" method="GET">
+							<fieldset>
+								<div class="full field">
+								   <input type="text" placeholder="Your Name" name="UName" required />
+								</div>
+								<div class="full field">
+								   <input type="email" placeholder="Email Address" name="Email" required />
+								</div>
+								<div class="full field">
+								   <input type="phn"  pattern="[0-9]{10}" title="Number should be of 10 Digits & It should not start with 0."  placeholder="Phone Number" name="Phoneno" required/>
+								</div>
+				  <div class="full field">
+				   <select name = "Subject" placeholder = " Subject" id="Course"  required>
+					 <option selected hidden value="">Select Course</option>
+					<option value="JEE">JEE-Advanced</option>
+					<option value="NEET">NEET</option>
+					<option value="BOARDS">BOARDS</option>
+					<option value="IAS">IAS</option>
+					<option value="CDS">CDS</option>
+					<option value="BANKING">BANKING</option>
+				  </select>
+				  </div>
+								<div class="full field">
+								   <textarea placeholder="Message"></textarea>
+								</div>
+								<div class="full field">
+								   <div class="center"><button>Send</button></div>
+								</div>
+ 
+				  
+							</fieldset>
+						 </form>
+					</div>
+                 </div>
+               </div>			  
+           </div>
+        </div>
+	<!-- end section -->
+	<style>
+		.row{
+			justify-content: center;
+		}
+		.buttonsc{
+			padding:30px;
+			cursor: pointer;
+			
+			
+		}
+		.imagec{
+			Width:280px;
+			height:120px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		.imagec:hover{
+			width:300px;
+			height:140px;
+			transition: 300ms ease;
+
+
+		}
+		.maps{
+			padding:30px 0 30px 0;
+		
+		}
+		.gmap{
+			width:100%;
+			height:400px;
+			border-radius: 15px;
+			border: 5px solid red;
+
+		}
+	</style>
+
+	<div class="section layout_padding padding_bottom-0">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="full">
+						<div class="heading_main text_align_center">
+			   <h2><span>Get in Touch with Us</span></h2>
+						</div>
+			</div>
+				</div>
+				<div class="pop" id="popu">
+					<div class="overlay1"></div>
+					<div class="content1">
+						<div class="cbutton" onclick="togglePopup()">&times;</div>
+						<div class="popup">
+							<div class="popup1">
+							<h2 class="m-b10 title-head">Contact <span style="color:#F49F1c">Information</span></h2>
+							<p>For any queries feel free to contact us</p>
+							<div class="info12">	
+								
+								   <div class="con12">
+									<i class="fa fa-map-marker infoicon" aria-hidden="true"></i><div class="infodi">Row House No.3, Near Nirmala College, 90 Feet Road, Thakur Complex, Kandivali(East).<br> Mumbai-400101</div></div>
+									<div class="con12 ">   <i class="fa fa-phone infoicon" aria-hidden="true"></i><div  class="infodi">9137061453</div></div>
+									<div class="con12 con121">  <i class="fa fa-envelope-o infoicon" aria-hidden="true"></i><div  class="infodi">phasoracademy@gmail.com</div></div>
+									<h3 class="followline" style="color: white;">Follow Us </h3>
+									<div class="Conicon" style="padding-bottom: 10px;">
+										<a href="https://www.facebook.com/mera.desh.7731"><i class="fa fa-facebook iconb " aria-hidden="true"></i></a>
+										<a href="https://www.instagram.com/phasor.academy/?hl=en"><i class="fa fa-instagram iconb iconb2" aria-hidden="true"></i></a>
+										<i class="fa fa-twitter iconb iconb3" aria-hidden="true"></i>
+									</div>
+									<div class="line"></div>
+									<h3 class="mapf" style="color: white;padding-top: 10px;">Find Us On Map</h3>
+									<div class="Conico">
+										<a href="https://www.google.com/maps/place/Phasor+academy/@19.2099254,72.7232781,10.94z/data=!4m8!1m2!2m1!1sphasor+academy+!3m4!1s0x3be7b7b7e86c73e5:0x645bd9a5789f9a86!8m2!3d19.2140081!4d72.866612"><i class="fa fa-map iconb" aria-hidden="true"></i></a>
+
+									</div>
+								   
+								
+							</div>
+						</div>
+					  
+					</div>
+							
+						 
+					 </div>
+					   
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</div>
+
+					<div class="pop" id="popu1">
+						<div class="overlay1"></div>
+						<div class="content1 content2">
+							<div class="cbutton" onclick="togglePopup1()">&times;</div>
+							<div class="popup">
+								<div class="popup1">
+								<h2 class="m-b10 title-head">Contact <span style="color:#F49F1c">Information</span></h2>
+								<p>For any queries feel free to contact us</p>
+								<div class="info12">	
+									
+									   <div class="con12">
+										<i class="fa fa-map-marker infoicon" aria-hidden="true"></i><div class="infodi">222, Patel Shopping Center, Sainath Road, Near Malad Subway, Malad(West).<br>Mumbai-400064</div></div>
+										<div class="con12 ">   <i class="fa fa-phone infoicon" aria-hidden="true"></i><div  class="infodi">7710882858 / 78</div></div>
+										<div class="con12 con121">  <i class="fa fa-envelope-o infoicon" aria-hidden="true"></i><div  class="infodi">phasoracademy@gmail.com</div></div>
+										<h3 class="followline" style="color: white;">Follow Us </h3>
+										<div class="Conicon" style="padding-bottom: 10px;">
+											<a href="https://www.facebook.com/mera.desh.7731"><i class="fa fa-facebook iconb " aria-hidden="true"></i></a>
+												<a href="https://www.instagram.com/phasor.academy/?hl=en"><i class="fa fa-instagram iconb iconb2" aria-hidden="true"></i></a>
+											<i class="fa fa-twitter iconb iconb3" aria-hidden="true"></i>
+										</div>
+										<div class="line"></div>
+										<h3 class="mapf" style="color: white;padding-top: 10px;">Find Us On Map</h3>
+										<div class="Conico">
+											<a href="https://www.google.com/maps/place/Phasor+academy/@19.2099254,72.7232781,10.94z/data=!4m8!1m2!2m1!1sphasor+academy+!3m4!1s0x3be7b7b7e86c73e5:0x645bd9a5789f9a86!8m2!3d19.2140081!4d72.866612"><i class="fa fa-map iconb" aria-hidden="true"></i></a>
+
+											
+										</div>
+									   
+									
+								</div>
+							</div>
+						  
+						</div>
+								
+							 
+						 </div>
+						   <style>
+							  .Conico a{
+								   display: inline-block !important;
+								   color:white !important;
+							   }
+							   .Conicon a{
+								   display: inline-block !important;
+								   color:white !important;
+							   }
+						   </style>
+		
+						</div>
+		
+		
+		
+						<div class="pop" id="popu2">
+							<div class="overlay1"></div>
+							<div class="content1 content2">
+								<div class="cbutton" onclick="togglePopup2()">&times;</div>
+								<div class="popup">
+									<div class="popup1">
+									<h2 class="m-b10 title-head">Contact <span style="color:#F49F1c">Information</span></h2>
+									<p>For any queries feel free to contact us</p>
+									<div class="info12">	
+										
+										   <div class="con12">
+											<i class="fa fa-map-marker infoicon" aria-hidden="true"></i><div class="infodi">3rd floor, B wing, Utkarsha Society, MA Road, Near Bata Show Room, Andheri(West)<br>Mumbai-400058</div></div>
+											<div class="con12 ">   <i class="fa fa-phone infoicon" aria-hidden="true"></i><div  class="infodi">8767079546</div></div>
+											<div class="con12 con121">  <i class="fa fa-envelope-o infoicon" aria-hidden="true"></i><div  class="infodi">phasoracademy@gmail.com</div></div>
+											<h3 class="followline" style="color: white;">Follow Us </h3>
+											<div class="Conicon" style="padding-bottom: 10px;">
+												<a href="https://www.facebook.com/mera.desh.7731"><i class="fa fa-facebook iconb " aria-hidden="true"></i></a>
+												<a href="https://www.instagram.com/phasor.academy/?hl=en"><i class="fa fa-instagram iconb iconb2" aria-hidden="true"></i></a>
+												<i class="fa fa-twitter iconb iconb3" aria-hidden="true"></i>
+											</div>
+											<div class="line"></div>
+											<h3 class="mapf" style="color: white;padding-top: 10px;">Find Us On Map</h3>
+											<div class="Conico">
+												<a href="https://www.google.com/maps/place/Phasor+academy/@19.2099254,72.7232781,10.94z/data=!4m8!1m2!2m1!1sphasor+academy+!3m4!1s0x3be7b7b7e86c73e5:0x645bd9a5789f9a86!8m2!3d19.2140081!4d72.866612"><i class="fa fa-map iconb" aria-hidden="true"></i></a>
+												
+											</div>
+										   
+										
+									</div>
+								</div>
+							  
+							</div>
+									
+								 
+							 </div>
+							   
+			
+							</div>
+		
+		
+						
+				</div>
+
+
+
+
+
+
+
+
+		</div>
+		   </div>
+		</div>
+
+
+		
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="container">
+			<div class="row">
+				
+				<div onclick="togglePopup()" class="buttonsc">
+					<img src="Main-image/Kandivali final-01.png" class="imagec" >
+				</div>
+				<div onclick="togglePopup1()" class="buttonsc">
+					<img src="Main-image/MALAL-01.png" class="imagec" >
+				</div> 
+				
+				<div onclick="togglePopup2()" class="buttonsc">
+					<img src="Main-image/Andheri1-01-01.png" class="imagec" >
+				</div>
+				</div>
+
+				<div class="maps">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.569234514191!2d72.86442331400619!3d19.214008087008843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7b7e86c73e5%3A0x645bd9a5789f9a86!2sPhasor%20academy!5e0!3m2!1sen!2sin!4v1613664188926!5m2!1sen!2sin"
+					 class="gmap"
+					 allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div>
+			
+			</div>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- Start Footer -->
+	 <footer class="footer-box">
+        <div class="container">
+		
+		   <div class="row">
+		   
+		      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+			     <div class="footer_blog">
+				    <div class="full margin-bottom_30">
+					   <img src="logo/FL-01.png" alt="#" />
+					 </div>
+					 <div class="full white_fonts">
+					    <p><span style="font-weight: bold; font-size: 15px;" >Head Branch : </span> Row House No.3, Near Nirmala College, 90 Feet Road, Thakur Complex, Kandivali(East)<br>Mumbai-400101<br>Contact No: 9137061453 </p>
+              <p Id="kandivali"><span style="font-weight: bold; font-size: 15px;" >Malad : </span>222, Patel Shopping Center, Sainath Road, Near Malad Subway, Malad(West) <br>Mumbai-400064<br>Contact No: 7710882858</p>
+              
+					 </div>
+				 </div>
+			  </div>
+        
+			  
+			  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+			       <div class="footer_blog footer_menu white_fonts">
+						    <h3>Our Centers</h3>
+						    <ul> 
+							  <li>> Kandivali</li>
+							  <li onclick="change()" style="cursor: pointer;" >> Malad</li>
+							  <li onclick="change1()" style="cursor: pointer;" >> Andheri</li>
+                <li onclick="change2()" style="cursor: pointer;" >> Thakur Village</li>
+							 
+							 
+							</ul>
+						 </div>
+				 </div>
+
+         
+         
+        <script>
+        function change(){
+         document.getElementById('kandivali').innerHTML='<p ><span style="font-weight: bold; font-size: 15px;" >Malad : </span>222, Patel Shopping Center, Sainath Road, Near Malad Subway, Malad(West) <br>Mumbai-400064<br>Contact No: 7710882858</p>';
+              
+              }
+
+              function change1(){
+         document.getElementById('kandivali').innerHTML='<p ><span style="font-weight: bold; font-size:15px">Andheri : </span>3rd floor, B wing, Utkarsha Society, MA Road, Near Bata Show Room, Andheri(West)<br>Mumbai-400058<br>Contact No: 7710882878 </p>';
+              }
+
+              function change2(){
+         document.getElementById('kandivali').innerHTML='<p ><span style="font-weight: bold; font-size:15px">Thakur Village : </span>Room No.3, Ground Floor, Thakur College Of Science and Commerce, Thakur Village, Kandivali(East)<br>Mumbai-400101<br>Contact No: 7208561190 </p>';
+              }
+        </script>
+				 
+				 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				 <div class="footer_blog full white_fonts">
+						     <h3>Newsletter</h3>
+							 <p>Enter you Email to get all news and offers of our Academy</p>
+							 <div class="newsletter_form">
+							    <form action="index.html">
+								   <input type="email" placeholder="Your Email" name="#" required />
+								   <button>Submit</button>
+								</form>
+							 </div>
+						 </div>
+					</div>	 
+			  
+			  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				 <div class="footer_blog full white_fonts">
+						     <h3>Contact us</h3>
+							 <ul class="full">
+                <li><i class="fa fa-phone-square" style="color:#e0af14 !important; font-size: 25px;padding-right:5px; "aria-hidden="true"></i><span style="padding-left:08px;font-size:15px;">9137061453<br>7710882858 / 78</span></li>
+                <li><i class="fa fa-envelope-square" style="color:#e0af14 !important; font-size: 25px;padding-right:5px; "aria-hidden="true"></i><span style="padding-left:8px;font-size:15px;">phasoracademy@gmail.com</span></li>
+
+							   <li><a href="https://www.facebook.com/mera.desh.7731" ><i class="fa fa-facebook-square" style="color:#e0af14 !important; font-size: 25px;padding-right:5px;top:10px;"></i><span style="padding-left:08px;top:0px;font-size:15px;">Phasor Academy</span></a></li>
+                 <li><a href="https://www.instagram.com/phasor.academy/?hl=en"><i class="fa fa-instagram" style="color:#e0af14 !important; font-size: 25px;padding-right:5px; " aria-hidden="true"></i><span style="padding-left:08px;font-size:15px;">phasor.academy</span></a></li>
+							 </ul>
+						 </div>
+					</div>	 
+			  
+		   </div>
+		
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="crp">© Phasor Academy All Rights Reserved.<br> Designed by <a href="https://www.instagram.com/thakur_adarsh_003/">Aadarsh Thakur.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+   
+	<script>
+        function togglePopup(){
+            document.getElementById("popu").classList.toggle("active");
+        }
+		function togglePopup1(){
+            document.getElementById("popu1").classList.toggle("active");
+        }
+		function togglePopup2(){
+            document.getElementById("popu2").classList.toggle("active");
+        }
+        </script>
+    
+
+    <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.pogo-slider.min.js"></script>
+    <script src="js/slider-index.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/custom.js"></script>
+	<script>
+	/* counter js */
+
+(function ($) {
+	$.fn.countTo = function (options) {
+		options = options || {};
+		
+		return $(this).each(function () {
+			// set options for current element
+			var settings = $.extend({}, $.fn.countTo.defaults, {
+				from:            $(this).data('from'),
+				to:              $(this).data('to'),
+				speed:           $(this).data('speed'),
+				refreshInterval: $(this).data('refresh-interval'),
+				decimals:        $(this).data('decimals')
+			}, options);
+			
+			// how many times to update the value, and how much to increment the value on each update
+			var loops = Math.ceil(settings.speed / settings.refreshInterval),
+				increment = (settings.to - settings.from) / loops;
+			
+			// references & variables that will change with each update
+			var self = this,
+				$self = $(this),
+				loopCount = 0,
+				value = settings.from,
+				data = $self.data('countTo') || {};
+			
+			$self.data('countTo', data);
+			
+			// if an existing interval can be found, clear it first
+			if (data.interval) {
+				clearInterval(data.interval);
+			}
+			data.interval = setInterval(updateTimer, settings.refreshInterval);
+			
+			// initialize the element with the starting value
+			render(value);
+			
+			function updateTimer() {
+				value += increment;
+				loopCount++;
+				
+				render(value);
+				
+				if (typeof(settings.onUpdate) == 'function') {
+					settings.onUpdate.call(self, value);
+				}
+				
+				if (loopCount >= loops) {
+					// remove the interval
+					$self.removeData('countTo');
+					clearInterval(data.interval);
+					value = settings.to;
+					
+					if (typeof(settings.onComplete) == 'function') {
+						settings.onComplete.call(self, value);
+					}
+				}
+			}
+			
+			function render(value) {
+				var formattedValue = settings.formatter.call(self, value, settings);
+				$self.html(formattedValue);
+			}
+		});
+	};
+	
+	$.fn.countTo.defaults = {
+		from: 0,               // the number the element should start at
+		to: 0,                 // the number the element should end at
+		speed: 1000,           // how long it should take to count between the target numbers
+		refreshInterval: 100,  // how often the element should be updated
+		decimals: 0,           // the number of decimal places to show
+		formatter: formatter,  // handler for formatting the value before rendering
+		onUpdate: null,        // callback method for every time the element is updated
+		onComplete: null       // callback method for when the element finishes updating
+	};
+	
+	function formatter(value, settings) {
+		return value.toFixed(settings.decimals);
+	}
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+	formatter: function (value, options) {
+	  return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+	}
+  });
+  
+  // start all the timers
+  $('.timer').each(count);  
+  
+  function count(options) {
+	var $this = $(this);
+	options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+	$this.countTo(options);
+  }
+});
+	</script>
+</body>
+
+</html>

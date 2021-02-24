@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEET</title>
+    <link rel="shortcut icon" type="image" href="logo/WATERMARK.png">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Perfect - Responsive HTML5 Template</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="css/pogo-slider.min.css" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+
+      <!-- LOADER -->
+      <div id="preloader">
+        <div class="loader">
+            <img src="images/loader.gif" alt="#" />
+        </div>
+    </div>
+    <!-- end loader -->
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-header">
+        <nav class="navbar header-nav navbar-expand-lg" >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="Logo/pha-02.png" alt="image"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end wrapper" id="navbar-wd">
+                    <ul class="navbar-nav" >
+                        <li><a class="nav-link " href="index.html">Home</a></li>
+                        <li class="li1">
+                          <a class="nav-link"  id="active1" href="courses.html">Courses</a>
+                          <ul class="ul1">
+                            <li><a href="jee-main.html">
+                              JEE (Main + Advanced)</a>
+                            </li>
+                            <li id="active1">
+                              <a href="Neet.html">
+                                NEET</a>
+                            </li>
+                            <li>
+                              <a href="Boards.htm">
+                                MHT-CET + Boards</a>
+                            </li>
+                            <li>
+                              <a href="UPSC.html">
+                                Civil Services</a>
+                            </li>
+                            <li>
+                              <a href="Banking.html">
+                                Banking</a>
+                            </li>
+                          </ul>
+                        
+                        </li>
+                        <li class="hidden" ><a class="nav-link" href="jee-main.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JEE (Main + Advanced) </a></li>
+                        <li class="hidden" id="active1"><a class="nav-link" href="Neet.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NEET</a></li>
+                        <li class="hidden"><a class="nav-link" href="Boards.htm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MHT-CET + Boards</a></li>
+                        <li class="hidden"><a class="nav-link" href="UPSC.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Civil Services</a></li>
+                        <li class="hidden"><a class="nav-link" href="Banking.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banking</a></li>
+                        <li><a class="nav-link" href="gallery.html">Results</a></li>
+                        <li><a class="nav-link" href="about.html">About</a></li>
+						
+						<li><a class="nav-link" href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+               
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+            
+        }
+        p{
+            color: black;
+            font-family: 'Poppins', sans-serif;
+}
+
+
+        
+        .inner_banner{
+            position: relative;
+            min-height: 250px !important;
+           display:flex;
+            justify-content: center;
+            align-items: center;
+        
+            
+
+            opacity: 1 !important;}
+           
+        
+        .inner_banner::before{
+            content: '';
+            position: absolute;
+            top:0px;
+            right: 0px;
+            bottom:0px;
+            left:0px;
+            background-image: url(Main-image/neet12.jpg) !important;
+          
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+
+           
+            opacity: 0.2;
+
+        }
+        .JEE_M{
+            font-size: 50px !important;
+        }
+        .navigation{
+            border-bottom: 1px solid grey;
+        }
+        .navigation h4{
+            font-size: 15px;
+            color:black;
+           
+            margin-top:10px;
+
+        }
+        @media (max-width:770px){
+            .inner_banner{
+                min-height: 200px !important;
+            }
+            .JEE_M{
+            font-size: 38px !important;
+        }}
+        @media (max-width:480px){
+            .inner_banner{
+                min-height: 180px !important;
+            }
+            .JEE_M{
+            font-size: 33px !important;
+        }
+        }
+        @media (max-width:420px){
+            .inner_banner{
+                min-height: 170px !important;
+            }
+            .JEE_M{
+            font-size: 26px !important;
+        }
+        }
+    </style>
+
+    <!-- section -->
+	
+	<section class="inner_banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                   <div class="full">
+                       <h3 class="JEE_M">NEET</h3>
+                   </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <div class="navigation">
+        <div class="container">
+            <div class="row">
+                <h4>Course > NEET</h4>
+            </div>
+        </div>
+      </div>
+      
+      <!-- end section -->
+      <style>
+         .ljee{
+            
+             float:left;
+             text-align: justify;
+             width:67%;
+                       
+          }
+          .rjee{
+              width:33%;
+              
+              
+             
+          }
+          .courses-content .single-content   h3{
+              position: relative;
+          }
+
+
+          .h3t::after{
+    position: absolute; 
+    content: "";
+    width: 80px;
+    height: 3px;
+    background:#F49F1c;
+    left: 0;
+    bottom: 0;
+
+   }
+  
+
+
+    .rjee{
+        padding:20px;
+      
+    }
+    .rjee h3{
+        padding:08px;
+        text-align: left;
+        margin-bottom: 15px;
+        padding-right:15px;
+
+    }
+    .Ename{
+        padding:08px;
+        text-align: left;
+        margin-bottom: 15px;
+        width:100%;
+        border: 1px solid #F12549;
+    }
+    .Enumber{
+        padding:08px;
+        text-align: left;
+        margin-bottom: 15px;
+       width:100%;
+       border: 1px solid #F12549;
+    }
+    form button{
+        width:100%;
+
+    }
+    .Esubmit{
+       
+        padding:08px;
+        text-align:center;
+        border: none;
+       
+        background:#0056FE;
+        color: white;
+      
+    
+    }
+    .form{
+        border: 1px solid grey;
+       
+        position: sticky;
+        top:80px;
+        left:0;
+      
+
+        Padding:30px;
+    }
+    .wide{
+        border-radius: 0;
+    margin-bottom: 15px;
+    height: 50px;
+    padding-top: 5px;
+    }
+    
+    #Course{
+        padding:08px;
+        text-align: left;
+        margin:0px;
+
+        margin-bottom: 15px;
+       width:100%;
+       border: 1px solid #F12549;
+       min-height:0px ;
+      
+    }
+    .form h3{
+        padding-top: 20px;
+       font-size: 30px;
+      
+    }
+    .h3t{
+        padding-top:20px;
+        font-size: 30px;
+    }
+    @media (max-width:800px){
+        .rjee{
+            width:100%;
+
+        }
+        .ljee{
+            width:100%;
+        }
+    }
+      @media(max-width:500px){
+          .row{
+              padding-left:18px;
+              padding-right:18px;
+          }
+      }
+      @media (max-width:500px){
+          .rjee{
+              padding:0;
+          }
+      }
+      .gree{
+          border-radius: 50%;
+          background: green;
+          color:white;
+          padding:2px;
+          font-size: 13px;
+      }
+    
+      </style>
+
+
+
+
+
+
+
+
+      <div class="container">
+          <div class="row">
+             
+                  <div class="ljee ">
+                      <h3 style="font-weight:bold ;color: #4c1864;" class="h3t">Overview</h3>
+                      <p>The National Eligibility cum Entrance Test (Undergraduate) (or NEET (UG)), formerly the All India Pre-Medical Test (AIPMT), is an all India pre-medical entrance test
+                           for students who wish to pursue undergraduate medical (MBBS), dental (BDS) and equivalent AYUSH (BAMS, BUMS, BHMS, etc.) courses in government and private
+                           institutions in India and also, for those intending to pursue primary medical qualification abroad.
+                      </p>
+                      <h3 style="font-weight:bold;color: #4c1864;" class="h3t">Description</h3>
+                      <p>In this course you will get all the lectures of NEET. 11th, 12th & Boards are also provided by us thi the same.
+                          By doing this course you will get knowledge about all the biological things. This will help you to get admission into
+                          government Medical Colleges so you can pursue Your MBBS with less fees.
+                         <p> This is the first step on the way to becoming docotr and to know human body in detail.
+                          After Clearing NEET you have options to do MBBS, BDS, BHMS, BAMS, BUMS and many more.
+                          With our Guidance and support by our faculty and your Commitment, Determination & Consistency you can pursue your
+                          dream of becoming Doctor. </p>
+                          
+                        
+                      
+
+                   <div class="features">
+                       <h3 style="font-weight:bold ;color: #4c1864;" class="h3t">What you will Get</h3>
+                        <p><i class="fa fa-check gree" aria-hidden="true"></i> 11th, 12th & Boards will be covered in this Course.</p>
+                        <p><i class="fa fa-check gree" aria-hidden="true"></i> Seperate lectures for Board.</p>
+                       
+                        <p><i class="fa fa-check gree" aria-hidden="true"></i> Online and Offline Lectures.</p>
+                        <p><i class="fa fa-check gree" aria-hidden="true"></i> You Can watch our lecture anytime on our APP.</p>
+                        <p><i class="fa fa-check gree" aria-hidden="true"></i> Weekly and Monthly Online Test.</p>
+                        <p><i class="fa fa-check gree" aria-hidden="true"></i> Dpp Provided of each Subject.</p>
+                        <p><i class="fa fa-check gree" aria-hidden="true"></i> Weekly analysis of student performance.</p>
+                       
+                   </div>
+
+                   <div class="courses-content">
+                    <div class="single-content ertification">
+                       <h3 style="font-weight:bold ;color: #4c1864;" class="h3t" >Course Details</h3><br>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Points</th>
+                                    <th>Details</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Eligibility</td>
+                                    <td>Students moving from class XI to class XII</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Admission Procedure</td>
+                                    <td>Direct Admission</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Duration</td>
+                                    <td>12 Months (Class XI)+ 12 Months (Class XII)</td>
+
+                                </tr>
+                               
+                                <tr>
+                                    <td>No.of attempts</td>
+                                    <td>2 times in a Year</td>
+                                </tr>
+                               
+                                <!-- <tr>
+                                    <td>No. of Attempts</td>
+                                    <td> 3</td>
+                                    <td> 3</td>
+                                </tr> -->
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+                  </div>
+                  <div class="rjee ">
+                     
+                      <div class="form">
+                          <img class="form-img " src="Main-image/Docotr instrument.jpg" width=100%>
+                        <h3>Enquiry Now</h3>
+                        <form action="http://phasor.co.in/Database/Insertt.php" method="GET">
+                            <input name="UName" placeholder="Enter Your Name" type="text" class="Ename" required>
+                            <input name="Phoneno" pattern="[0-9]{10}" title="Number should be of 10 Digits & It should not start with 0."  placeholder="Enter your Phone number"  class="Enumber" required><br>
+                            <select name = "Subject" placeholder = " Subject" id="Course"  required>
+                              <option selected hidden value="">Select Course</option>
+                              <option value="JEE">JEE-Advanced</option>
+                              <option value="NEET">NEET</option>
+                              <option value="BOARDS">BOARDS</option>
+                              <option value="IAS">IAS</option>
+                              <option value="CDS">CDS</option>
+                              <option value="BANKING">BANKING</option>
+                            </select>
+                            <button type="submit" class="Esubmit">Submit</button>
+                          </form>
+                      </div>
+                  </div>
+              
+          </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- Start Footer -->
+	 <footer class="footer-box">
+        <div class="container">
+		
+		   <div class="row">
+		   
+		      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+			     <div class="footer_blog">
+				    <div class="full margin-bottom_30">
+					   <img src="logo/FL-01.png" alt="#" />
+					 </div>
+					 <div class="full white_fonts">
+					    <p><span style="font-weight: bold; font-size: 15px;" >Head Branch : </span> Row House No.3, Near Nirmala College, 90 Feet Road, Thakur Complex, Kandivali(East)<br>Mumbai-400101<br>Contact No: 9137061453 </p>
+              <p Id="kandivali"><span style="font-weight: bold; font-size: 15px;" >Malad : </span>222, Patel Shopping Center, Sainath Road, Near Malad Subway, Malad(West) <br>Mumbai-400064<br>Contact No: 7710882858</p>
+              
+					 </div>
+				 </div>
+			  </div>
+        
+			  
+			  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+			       <div class="footer_blog footer_menu white_fonts">
+						    <h3>Our Centers</h3>
+						    <ul> 
+							  <li>> Kandivali</li>
+							  <li onclick="change()" style="cursor: pointer;" >> Malad</li>
+							  <li onclick="change1()" style="cursor: pointer;" >> Andheri</li>
+                <li onclick="change2()" style="cursor: pointer;" >> Thakur Village</li>
+							 
+							 
+							</ul>
+						 </div>
+				 </div>
+
+         
+         
+        <script>
+        function change(){
+         document.getElementById('kandivali').innerHTML='<p ><span style="font-weight: bold; font-size: 15px;" >Malad : </span>222, Patel Shopping Center, Sainath Road, Near Malad Subway, Malad(West) <br>Mumbai-400064<br>Contact No: 7710882858</p>';
+              
+              }
+
+              function change1(){
+         document.getElementById('kandivali').innerHTML='<p ><span style="font-weight: bold; font-size:15px">Andheri : </span>3rd floor, B wing, Utkarsha Society, MA Road, Near Bata Show Room, Andheri(West)<br>Mumbai-400058<br>Contact No: 7710882878 </p>';
+              }
+
+              function change2(){
+         document.getElementById('kandivali').innerHTML='<p ><span style="font-weight: bold; font-size:15px">Thakur Village : </span>Room No.3, Ground Floor, Thakur College Of Science and Commerce, Thakur Village, Kandivali(East)<br>Mumbai-400101<br>Contact No: 7208561190 </p>';
+              }
+        </script>
+				 
+				 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				 <div class="footer_blog full white_fonts">
+						     <h3>Newsletter</h3>
+							 <p>Enter you Email to get all news and offers of our Academy</p>
+							 <div class="newsletter_form">
+							    <form action="index.html">
+								   <input type="email" placeholder="Your Email" name="#" required />
+								   <button>Submit</button>
+								</form>
+							 </div>
+						 </div>
+					</div>	 
+			  
+			  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				 <div class="footer_blog full white_fonts">
+						     <h3>Contact us</h3>
+							 <ul class="full">
+                <li><i class="fa fa-phone-square" style="color:#e0af14 !important; font-size: 25px;padding-right:5px; "aria-hidden="true"></i><span style="padding-left:08px;font-size:15px;">9137061453<br>7710882858 / 78</span></li>
+                <li><i class="fa fa-envelope-square" style="color:#e0af14 !important; font-size: 25px;padding-right:5px; "aria-hidden="true"></i><span style="padding-left:8px;font-size:15px;">phasoracademy@gmail.com</span></li>
+
+							   <li><a href="https://www.facebook.com/mera.desh.7731" ><i class="fa fa-facebook-square" style="color:#e0af14 !important; font-size: 25px;padding-right:5px;top:10px;"></i><span style="padding-left:08px;top:0px;font-size:15px;">Phasor Academy</span></a></li>
+                 <li><a href="https://www.instagram.com/phasor.academy/?hl=en"><i class="fa fa-instagram" style="color:#e0af14 !important; font-size: 25px;padding-right:5px; " aria-hidden="true"></i><span style="padding-left:08px;font-size:15px;">phasor.academy</span></a></li>
+							 </ul>
+						 </div>
+					</div>	 
+			  
+		   </div>
+		
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="crp">© Phasor Academy All Rights Reserved.<br> Designed by <a href="https://www.instagram.com/thakur_adarsh_003/">Aadarsh Thakur.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.pogo-slider.min.js"></script>
+    <script src="js/slider-index.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/custom.js"></script>
+	<script>
+	/* counter js */
+
+(function ($) {
+	$.fn.countTo = function (options) {
+		options = options || {};
+		
+		return $(this).each(function () {
+			// set options for current element
+			var settings = $.extend({}, $.fn.countTo.defaults, {
+				from:            $(this).data('from'),
+				to:              $(this).data('to'),
+				speed:           $(this).data('speed'),
+				refreshInterval: $(this).data('refresh-interval'),
+				decimals:        $(this).data('decimals')
+			}, options);
+			
+			// how many times to update the value, and how much to increment the value on each update
+			var loops = Math.ceil(settings.speed / settings.refreshInterval),
+				increment = (settings.to - settings.from) / loops;
+			
+			// references & variables that will change with each update
+			var self = this,
+				$self = $(this),
+				loopCount = 0,
+				value = settings.from,
+				data = $self.data('countTo') || {};
+			
+			$self.data('countTo', data);
+			
+			// if an existing interval can be found, clear it first
+			if (data.interval) {
+				clearInterval(data.interval);
+			}
+			data.interval = setInterval(updateTimer, settings.refreshInterval);
+			
+			// initialize the element with the starting value
+			render(value);
+			
+			function updateTimer() {
+				value += increment;
+				loopCount++;
+				
+				render(value);
+				
+				if (typeof(settings.onUpdate) == 'function') {
+					settings.onUpdate.call(self, value);
+				}
+				
+				if (loopCount >= loops) {
+					// remove the interval
+					$self.removeData('countTo');
+					clearInterval(data.interval);
+					value = settings.to;
+					
+					if (typeof(settings.onComplete) == 'function') {
+						settings.onComplete.call(self, value);
+					}
+				}
+			}
+			
+			function render(value) {
+				var formattedValue = settings.formatter.call(self, value, settings);
+				$self.html(formattedValue);
+			}
+		});
+	};
+	
+	$.fn.countTo.defaults = {
+		from: 0,               // the number the element should start at
+		to: 0,                 // the number the element should end at
+		speed: 1000,           // how long it should take to count between the target numbers
+		refreshInterval: 100,  // how often the element should be updated
+		decimals: 0,           // the number of decimal places to show
+		formatter: formatter,  // handler for formatting the value before rendering
+		onUpdate: null,        // callback method for every time the element is updated
+		onComplete: null       // callback method for when the element finishes updating
+	};
+	
+	function formatter(value, settings) {
+		return value.toFixed(settings.decimals);
+	}
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+	formatter: function (value, options) {
+	  return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+	}
+  });
+  
+  // start all the timers
+  $('.timer').each(count);  
+  
+  function count(options) {
+	var $this = $(this);
+	options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+	$this.countTo(options);
+  }
+});
+	</script>
+    
+</body>
+</html>
