@@ -167,7 +167,24 @@ button:focus {
 	opacity: 1;
 }
 
+/*------------------------------------------------------------------ 
+   Debugging
+-------------------------------------------------------------------*/
 
+.slick-dots{
+	display: none !important;
+}
+@media (min-width: 768px) and (max-width: 991px){
+.section.layout_padding h4 {
+     text-align: center !important; 
+}
+.JEE{
+	font-size: 15px !important;
+}
+.ma {
+     padding-bottom: 10px !important;
+}
+}
 
   
 /*------------------------------------------------------------------ 
